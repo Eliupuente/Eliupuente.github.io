@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="../menuEder/CSS/estilomenu.css">
+<!-- Font Awesome JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body >
+<!-- CSS -->
+<style>
+#my_camera{
+        width: 320px;
+        height: 240px;
+        border: 1px solid black;
+}
+</style>
+
+
+
+<center>
+    <h3>Tomar Fotografia para perfil</h3><br><br>
+<form>
+<div id="my_camera"></div><br><br>
+<input class="btn btn-primary ml-4 mr-3" type=button value="Tomar foto" name = "Imagen" onClick="take_snapshot()">
+<input class="btn btn-primary mr-3" type=button value="Guardar foto" onClick="saveSnap()">
+<br><br><div id="results" ></div><br><br>
+
+
+
+
+
+
+
+
+
+    <!-- Webcam.min.js -->
+    <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+	<!-- Configure a few settings and attach camera -->
+	<script language="JavaScript">
+	 // Configure a few settings and attach camera
+    Webcam.set({
+      width: 320,
+      height: 240,
+      image_format: 'jpeg',
+      jpeg_quality: 90
+    });
+    Webcam.attach( '#my_camera' );
+    // preload shutter audio clip
+    var shutter = new Audio();
+    shutter.autoplay = false;
+    shutter.src = navigator.userAgent.match(/Firefox/) ? 'shutter.ogg' : 'shutter.mp3';
+    function take_snapshot() {
+        // play sound effect
+        shutter.play();
+        // take snapshot and get image data
+        Webcam.snap( function(data_uri) {
+            // display results in page
+            document.getElementById('results').innerHTML = 
+            '<img id="imageprev" src="'+data_uri+'"/>';
+        } );
+        Webcam.reset();
+    }
+    function saveSnap(){
+            var base64image =  document.getElementById("imageprev").src;
+             Webcam.upload( base64image, 'upload.php', function(code, text) {
+                 console.log('Save successfully');
+            });
+        }
+	</script><br>
+    <a type="button" class="btn btn-secondary" href="/instrumentacion/tablero/index.php">Salir</a>  
+</form>
+</center>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
