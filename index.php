@@ -72,8 +72,7 @@
 
 
 <!--********************************VARIABLES********************************************************-->
-<button name="button" type="submit" class="btn login_btn">Acceder</button>
-
+<button name="button" type="submit" class="btn login_btn">Acceeder</button>
 
 
 				   </div>
