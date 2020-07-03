@@ -81,7 +81,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 <!--********************************VARIABLES********************************************************-->
 <label for="inputEmail4" style="color: #FFFFFF;">Departamento</label>
-<select name="Demartamentos" class="custom-select">
+<select name="Demartamentos" class="custom-select" required>
   <option selected>Selecciona tu departamento...</option>
 <option value="Centro de computo">Centro de computo</option>
 <option value="Ciencias de la tierra">Ciencias de la tierra</option>
