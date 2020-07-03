@@ -37,7 +37,7 @@
 
 <!--********************************VARIABLES********************************************************-->
 <input type="text" name="Usuarios" class="form-control input_user" 
-		value="" placeholder="Correo">
+		value="" placeholder="Correo" required>
 						
 						
 						
@@ -50,7 +50,7 @@
 
 <!--********************************VARIABLES********************************************************-->
 <input type="password" name="Contraseña" class="form-control input_pass" 
-		value="" placeholder="Contraseña">
+		value="" placeholder="Contraseña" required>
 
 
 
@@ -72,7 +72,7 @@
 
 
 <!--********************************VARIABLES********************************************************-->
-<button name="button" type="submit" class="btn login_btn">Acceeder</button>
+<button name="button" type="submit" class="btn login_btn" >Acceeder</button>
 
 
 				   </div>
