@@ -18,7 +18,7 @@
 			<div class="user_card" style="height: 400px; width: 400px;">
 				<div class="d-flex justify-content-center">
 					<div class="brand_logo_container">
-						<img src="../instrumentacion/MenuEder/css/logo.png" class="brand_logo" alt="Logo">
+						<img src="../MenuEder/CSS/logo.png" class="brand_logo" alt="Logo">
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
