@@ -30,7 +30,7 @@ Usuario</div>
 L <div class="input-group mb-4 mr-3 ml-3">
 
 <!--********************************VARIABLES********************************************************-->
-<input type="text" class="form-control input_user" name="Usuarios" placeholder="Numero de control"> 
+<input type="text" class="form-control input_user" name="Usuarios" placeholder="Numero de control" required> 
 
 
 
@@ -44,7 +44,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 
 <!--********************************VARIABLES********************************************************-->
-<input type="password" class="form-control" id="inputPassword4" name="Contraseña" placeholder="Contraseña...">
+<input type="password" class="form-control" id="inputPassword4" name="Contraseña" placeholder="Contraseña..." required>
 
 
 
@@ -54,7 +54,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 
 <!--********************************VARIABLES********************************************************-->
-<input type="password" class="form-control" id="inputPassword4" name="Rcontraseña" placeholder="Contraseña...">
+<input type="password" class="form-control" id="inputPassword4" name="Rcontraseña" placeholder="Contraseña..." required>
 
 
 
@@ -96,7 +96,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 
 <!--********************************VARIABLES********************************************************-->
-<input type="text" class="form-control" id="inputPassword4" name="Nombres" placeholder="Nombre(s)">
+<input type="text" class="form-control" id="inputPassword4" name="Nombres" placeholder="Nombre(s)" required>
 
 
 
@@ -107,7 +107,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 
 <!--********************************VARIABLES********************************************************-->
-<input type="text" class="form-control" id="inputPassword4" name="Apellido_Paterno" placeholder="Apellido paterno">
+<input type="text" class="form-control" id="inputPassword4" name="Apellido_Paterno" placeholder="Apellido paterno" required>
 
 
 
@@ -117,7 +117,7 @@ L <div class="input-group mb-4 mr-3 ml-3">
 
 
 <!--********************************VARIABLES********************************************************-->
-<input type="text" class="form-control" id="inputPassword4" name="Apellido_Materno" placeholder="Apellido materno">
+<input type="text" class="form-control" id="inputPassword4" name="Apellido_Materno" placeholder="Apellido materno" required>
 
 
 
