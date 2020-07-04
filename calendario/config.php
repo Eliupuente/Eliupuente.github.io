@@ -1,6 +1,6 @@
 <?php
 // Datos de conexion a la base de datos
-$servidor='localhost';
+$servidor='localhost:3306';
 $usuario='id13132544_root1';
 $pass='e4KKI2~=40JF[w3_';
 $bd='id13132544_sicsa';
