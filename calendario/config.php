@@ -1,9 +1,9 @@
 <?php
 // Datos de conexion a la base de datos
 $servidor='localhost';
-$usuario='root';
-$pass='';
-$bd='sicsa';
+$usuario='id13132544_root1';
+$pass='e4KKI2~=40JF[w3_';
+$bd='id13132544_sicsa';
 // Nos conectamos a la base de datos
 $conexion = new mysqli($servidor, $usuario, $pass, $bd);	
 // Definimos que nuestros datos vengan en utf8
