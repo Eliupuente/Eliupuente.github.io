@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include("Login/coneccionbd.php");// conexion a la base de datos
+include("coneccionbd.php");// conexion a la base de datos
 	
 	$Usuarios = $_POST['Usuarios'];
 	$Contraseña = $_POST['Contraseña'];
